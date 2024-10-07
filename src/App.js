@@ -18,7 +18,7 @@ class App extends Component {
           <Switch>
             <Route path="/products/:id" render={(props) => <ProductDetails {...props} />}/>
             <Route path="/products" render={(props) => <Products {...props} />} />
-            <Route path="/posts/:year/:month" render={(props) => <Posts {...props} />} />
+            <Route path="/posts/:year?/:month?" render={(props) => <Posts {...props} />} />
             <Route path="/admin" render={(props) => <Dashboard {...props} />} />
             <Route path="/" render={(props) => <Home {...props} />} />
           </Switch>

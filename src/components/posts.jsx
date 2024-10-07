@@ -1,10 +1,11 @@
 import React from "react";
 
-const Posts = () => {
+const Posts = ({match}) => {
   return (
     <div>
       <h1>Posts</h1>
-      Year: , Month:
+      Year: {match.params.year} , Month {match.params.month}:
+      {/* {match.params.year} {match.params.month} */}
     </div>
   );
 };
