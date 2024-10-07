@@ -28,7 +28,7 @@ class App extends Component {
               path="/posts/:year?/:month?"
               render={(props) => <Posts {...props} />}
             />
-            <Redirect from = "/messages"to="/posts" />
+            <Redirect from="/messages" to="/posts" />
             <Route path="/admin" render={(props) => <Dashboard {...props} />} />
             <Route
               path="/not-found"
