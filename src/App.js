@@ -16,10 +16,10 @@ class App extends Component {
         <NavBar />
         <div className="content">
           <Switch>
-            <Route path="/products" component={Products} />
-            <Route path="/posts" component={Posts} />
-            <Route path="/admin" component={Dashboard} />
-            <Route path="/" component={Home} />
+            <Route path="/products" render={(props) => <Products {...props} />} />
+            <Route path="/posts" render={(props) => <Posts {...props} />} />
+            <Route path="/admin" render={(props) => <Dashboard {...props} />} />
+            <Route path="/" render={(props) => <Home {...props} />}/>
           </Switch>
         </div>
       </div>
